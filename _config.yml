@@ -1,0 +1,52 @@
+# Site settings
+title: Arjen.me
+email: mail@arjen.me
+description: Arjen Oosterkamp - Full stack web developer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://arjen.me" # the base hostname & protocol for your site
+paginate: 10
+paginate_path: "/blog/page/:num"
+permalink: /blog/:title
+
+gems:
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile', 'spec']
+
+assets:
+  # baseurl: /assets
+  # baseurl: https://db43e5nt18cg3.cloudfront.net/assets
+  sources:
+    # - _assets/fonts
+    # - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+
+# collections:
+#   cases:
+#     permalink: /cases/:path/
+#     output: true
+#   resources:
+#     permalink: /:path/
+#     output: true
+#   integrations:
+#     permalink: /integrations/:path/
+#     output: true
+#   quotes:
+#     output: false
+
+# defaults:
+#   - scope:
+#       type: cases
+#     values:
+#       layout: case
+#   - scope:
+#       type: resources
+#     values:
+#       layout: page
+#   - scope:
+#       type: integrations
+#     values:
+#       layout: integration

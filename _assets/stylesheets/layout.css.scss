@@ -1,0 +1,143 @@
+@import "bootstrap/variables";
+
+// Colors
+$orange: #ff5e0f;
+
+body {
+  background: #e5e5e5;
+  font-family: 'Crete Round', serif;
+  color: #464646;
+  margin: 0px; padding: 0px;
+  text-align: center;
+  font-size: 10pt;
+}
+
+// // Font size per screen size
+
+@media (min-width: $screen-sm-min) {
+  body { font-size: 12pt; }
+}
+
+@media (min-width: $screen-md-min) {
+  body { font-size: 12pt; }
+}
+
+@media (min-width: $screen-lg-min) {
+  body { font-size: 14pt; }
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #939393;
+}
+
+h2 {
+  font-size: 3em;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 1.7em;
+}
+
+#header {
+  background: #fefefe;
+  padding: 80px 20px;
+  border-bottom: 1px solid #cdcdcd;
+  position: relative;
+
+  background: -moz-linear-gradient(top,  #fefefe 0%, #f8f8f8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fefefe 0%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fefefe 0%,#f8f8f8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fefefe 0%,#f8f8f8 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #fefefe 0%,#f8f8f8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f8f8f8',GradientType=0 ); /* IE6-9 */
+
+  -webkit-box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow:  0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
+  border-radius: 0px 0px 20px 20px;
+}
+
+#logo {
+  margin-bottom: 40px;
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  color: $orange;
+  text-decoration: none;
+
+  &:hover, &:active {
+    color: #464646;
+  }
+}
+
+#contact {
+  padding-top: 60px;
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      width: 65px;
+      margin: 0px 1vw;
+      padding: 0px;
+      display: inline-block;
+
+      a {
+        display: block;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 65px;
+        background-image: image-url('contact.png');
+        background-repeat: no-repeat;
+
+        @media (min--moz-device-pixel-ratio: 1.3),
+           (-o-min-device-pixel-ratio: 2.6/2),
+           (-webkit-min-device-pixel-ratio: 1.3),
+           (min-device-pixel-ratio: 1.3),
+           (min-resolution: 1.3dppx) {
+          /* on retina, use image that's scaled by 2 */
+          background-image: image-url('contact_2x.png');
+          background-size: 405px 144px;
+        }
+      }
+    }
+  }
+}
+
+#github {
+  background-position: 0px 0px;
+  &:hover { background-position: 0px -80px; }
+}
+
+#linkedin {
+  background-position: -112px 0px;
+  &:hover { background-position: -112px -80px; }
+}
+
+#facebook {
+  background-position: -227px 0px;
+  &:hover { background-position: -227px -80px; }
+}
+
+#email {
+  background-position: -341px 0px;
+  &:hover { background-position: -341px -80px; }
+}
