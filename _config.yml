@@ -16,8 +16,6 @@ markdown: kramdown
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile', 'spec']
 
 assets:
-  baseurl: http://arjeno.github.io/arjeno.github.io/assets
-
   sources:
     - _assets/stylesheets
     - _assets/images
