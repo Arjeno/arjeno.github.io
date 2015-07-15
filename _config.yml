@@ -16,37 +16,8 @@ markdown: kramdown
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile', 'spec']
 
 assets:
-  # baseurl: /assets
-  # baseurl: https://db43e5nt18cg3.cloudfront.net/assets
+  baseurl: http://arjeno.github.io/arjeno.github.io/assets
+
   sources:
-    # - _assets/fonts
-    # - _assets/javascripts
     - _assets/stylesheets
     - _assets/images
-
-# collections:
-#   cases:
-#     permalink: /cases/:path/
-#     output: true
-#   resources:
-#     permalink: /:path/
-#     output: true
-#   integrations:
-#     permalink: /integrations/:path/
-#     output: true
-#   quotes:
-#     output: false
-
-# defaults:
-#   - scope:
-#       type: cases
-#     values:
-#       layout: case
-#   - scope:
-#       type: resources
-#     values:
-#       layout: page
-#   - scope:
-#       type: integrations
-#     values:
-#       layout: integration
